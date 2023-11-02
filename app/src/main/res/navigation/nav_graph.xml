@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/fragment_first_screen">
+
+    <fragment
+        android:id="@+id/fragment_first_screen"
+        android:name="kz.just_code.animationapp.ViewAnimationFragment"
+        android:label="FirstFragment">
+        <action
+            android:id="@+id/action_first_screen_to_second_screen"
+            app:destination="@id/second_screen" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/second_screen"
+        android:name="kz.just_code.animationapp.SecondScreenFragment"
+        android:label="SecondFragment"/>
+</navigation>
