@@ -12,7 +12,6 @@
             android:id="@+id/action_first_screen_to_second_screen"
             app:destination="@id/second_screen" />
     </fragment>
-
     <fragment
         android:id="@+id/second_screen"
         android:name="kz.just_code.animationapp.SecondScreenFragment"
