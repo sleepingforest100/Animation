@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/nav_graph"
@@ -8,12 +7,56 @@
         android:id="@+id/fragment_first_screen"
         android:name="kz.just_code.animationapp.ViewAnimationFragment"
         android:label="FirstFragment">
+
         <action
-            android:id="@+id/action_first_screen_to_second_screen"
-            app:destination="@id/second_screen" />
+            android:id="@+id/action_fragment_first_screen_to_sharedStartFragment"
+            app:destination="@id/sharedStartFragment" />
     </fragment>
     <fragment
-        android:id="@+id/second_screen"
-        android:name="kz.just_code.animationapp.SecondScreenFragment"
-        android:label="SecondFragment"/>
+        android:id="@+id/sharedStartFragment"
+        android:name="kz.just_code.animationapp.SharedStartFragment"
+        android:label="SharedStartFragment" >
+        <action
+            android:id="@+id/action_sharedStartFragment_to_sharedEndFragment"
+            app:destination="@id/sharedEndFragment" />
+        <action
+            android:id="@+id/action_sharedStartFragment_to_sharedEndFragment2"
+            app:destination="@id/sharedEndFragment2" />
+        <action
+            android:id="@+id/action_sharedStartFragment_to_sharedEndFragment3"
+            app:destination="@id/sharedEndFragment3" />
+        <action
+            android:id="@+id/action_sharedStartFragment_to_sharedEndFragment6"
+            app:destination="@id/sharedEndFragment6" />
+        <action
+            android:id="@+id/action_sharedStartFragment_to_sharedEndFragment5"
+            app:destination="@id/sharedEndFragment5" />
+        <action
+            android:id="@+id/action_sharedStartFragment_to_sharedEndFragment4"
+            app:destination="@id/sharedEndFragment4" />
+    </fragment>
+    <fragment
+        android:id="@+id/sharedEndFragment"
+        android:name="kz.just_code.animationapp.SharedEndFragment"
+        android:label="SharedEndFragment" />
+    <fragment
+        android:id="@+id/sharedEndFragment2"
+        android:name="kz.just_code.animationapp.SharedEndFragment2"
+        android:label="SharedEndFragment2" />
+    <fragment
+        android:id="@+id/sharedEndFragment3"
+        android:name="kz.just_code.animationapp.SharedEndFragment3"
+        android:label="SharedEndFragment3" />
+    <fragment
+        android:id="@+id/sharedEndFragment4"
+        android:name="kz.just_code.animationapp.SharedEndFragment4"
+        android:label="SharedEndFragment4" />
+    <fragment
+        android:id="@+id/sharedEndFragment5"
+        android:name="kz.just_code.animationapp.SharedEndFragment5"
+        android:label="SharedEndFragment5" />
+    <fragment
+        android:id="@+id/sharedEndFragment6"
+        android:name="kz.just_code.animationapp.SharedEndFragment6"
+        android:label="SharedEndFragment6" />
 </navigation>
